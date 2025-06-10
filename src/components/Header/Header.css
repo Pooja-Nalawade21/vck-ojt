@@ -1,0 +1,48 @@
+#Z{
+    background-color: rgb(10, 78, 224);
+    color: white;
+    width: 100%;
+}
+
+#R{
+    color: white;
+    margin: 20px;
+    padding: 10px;
+}
+
+#u{
+    background-color: green;
+    color: blueviolet;
+    border-radius: 2px;
+}
+
+#t{
+    width: 100%;
+}
+
+.hamburger{
+    width: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 24px;
+    margin: 10px;
+}
+
+.bar{
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    background-color: #1d1c1c;
+    padding: 10px;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    box-shadow: 0 2px 6px white;
+}
