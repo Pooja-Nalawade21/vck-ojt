@@ -11,37 +11,39 @@ const AdmissionsPage = () => {
             <h1>Admissions at Vivekanand College</h1>
             <p>Welcome to the Admissions page of Vivekanand College! We are delighted you're considering joining our vibrant academic community. Our admission process is designed to be straightforward and accessible.</p>
             <p>Please review the eligibility criteria and key dates below for the upcoming academic year. For any queries, feel free to contact our admissions office.</p>
-            <h2>Eligibility Criteria for Undergraduate Programs</h2>
-            <table id="e">
-                <thead id="e">
-                    <tr id="e">
-                        <th id="e">Program</th>
-                        <th id="e">Minimum Qualification</th>
-                        <th id="e">Required Subjects</th>
-                        <th id="e">Minimum Marks (%)</th>
+            <div className="e">
+            <h2 className="r">Eligibility Criteria for Undergraduate Programs</h2>
+            <table className="b">
+                <thead>
+                    <tr>
+                        <th>Program</th>
+                        <th>Minimum Qualification</th>
+                        <th>Required Subjects</th>
+                        <th>Minimum Marks (%)</th>
                     </tr>
                 </thead>
-                <tbody id="e">
-                    <tr id="e">
-                        <tb id="e"> B.Sc. Computer Science</tb>
-                        <tb id="e">10+2 (or equivalent)</tb>
-                        <tb id="e">Physics, Chemistry, Maths</tb>
-                        <tb id="e">50%</tb>
+                <tbody>
+                    <tr>
+                        <tb> B.Sc. Computer Science</tb>
+                        <tb>10+2 (or equivalent)</tb>
+                        <tb>Physics, Chemistry, Maths</tb>
+                        <tb className="p">50%</tb>
                     </tr>
-                    <tr id="e">
-                        <tb id="e">B.Com. Accounting & Finance</tb>
-                        <tb id="e">10+2 (or equivalent)</tb>
-                        <tb id="e">Commerce Stream</tb>
-                        <tb id="e">45%</tb>
+                    <tr>
+                        <tb>B.Com. Accounting & Finance</tb>
+                        <tb>10+2 (or equivalent)</tb>
+                        <tb>Commerce Stream</tb>
+                        <tb className="p">45%</tb>
                     </tr>
-                    <tr id="e">
-                        <tb id="e">B.A. English Literature</tb>
-                        <tb id="e">10+2 (or equivalent)</tb>
-                        <tb id="e">Any Stream</tb>
-                        <tb id="e">40%</tb>
+                    <tr>
+                        <tb>B.A. English Literature</tb>
+                        <tb>10+2 (or equivalent)</tb>
+                        <tb>Any Stream</tb>
+                        <tb className="p">40%</tb>
                     </tr>
                 </tbody>
             </table>
+            </div>
             <h5>Application Process</h5>
             <ol>
               <li><strong>Online Application:</strong> Fill out the application form available on our portal.</li>  

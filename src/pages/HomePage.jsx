@@ -10,9 +10,9 @@ const HomePage = () => {
             <div id="C">
             <h1 id="A"><strong>Welcome to Vivekanand College!</strong></h1>
             <p id="A">Your journey to excellence starts here.</p><br></br>
-            <a href="/admissionspage">
-            <button id="B">Apply Now!</button><br></br>
-            </a>
+            
+          <Link to='/admissionspage'> <button>Apply Now!</button></Link>
+            
             </div>
           <div>
             <p>**Vivekanand College is a premier educational institution dedicated to fostering academic excellence, innovation, and holistic development. Established in [Year of Establishment, e.g., 1980], we have proudly served generations of students, empowering them to achieve their full potential.</p>
