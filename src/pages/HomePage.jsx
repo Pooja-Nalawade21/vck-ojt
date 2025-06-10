@@ -2,6 +2,7 @@ import React from "react"
 import Header from "../components/Header/Header"
 import './HomePage.css'
 import Footer from "../components/Footer/Footer"
+import { Link } from "react-router-dom"
 const HomePage = () => {
     return (
         <div id="U">
@@ -11,7 +12,7 @@ const HomePage = () => {
             <h1 id="A"><strong>Welcome to Vivekanand College!</strong></h1>
             <p id="A">Your journey to excellence starts here.</p><br></br>
             
-          <Link to='/admissionspage'> <button>Apply Now!</button></Link>
+          <Link to='/admissionspage'> <button>Apply Now!</button></Lin>
             
             </div>
           <div>
