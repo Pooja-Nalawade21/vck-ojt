@@ -1,6 +1,6 @@
 import React from "react"
 import Header from "../components/Header/Header"
-import './Homepage.css'
+import './HomePage.css'
 import Footer from "../components/Footer/Footer"
 const HomePage = () => {
     return (

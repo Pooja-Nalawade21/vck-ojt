@@ -1,5 +1,5 @@
 import React from "react"
-import HomePage from "./pages//HomePage"
+import HomePage from "./pages/HomePage"
 import AboutPage from "./pages/AboutPage"
 import CoursesPage from "./pages/CoursesPage"
 import ContactPage from "./pages/ContactPage"
