@@ -5,7 +5,7 @@ import Footer from "../components/Footer/Footer"
 
 const CoursesPage = () => {
     return (
-        <div>
+        <div className="w" style={{overflow:"auto"}}>
             <Header/>
             <div>
             <h1>Our Academic Programs</h1>
@@ -48,7 +48,7 @@ const CoursesPage = () => {
       <h5>Program Details & Fee Structure (Annual)</h5>
       <table>
         <thead>
-          <tr id="q">
+          <tr>
             <th>Program Type</th>
             <th> Course Name</th>
             <th>Duration</th>
