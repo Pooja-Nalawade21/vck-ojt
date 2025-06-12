@@ -8,7 +8,7 @@ const HomePage = () => {
       <div className="a" style={{overflow:"auto"}}>
           <Header/>
          <div className="f">
-              <img src="\public\Images\1.jpeg" alt="vivekanand college campus" className="h"/>
+              <img src="\Images\1.jpeg" alt="vivekanand college campus" className="h"/>
           <div className="g">
             <h1><strong>Welcome to Vivekanand College!</strong></h1>
             <p>Your journey to excellence starts here.</p>
