@@ -5,7 +5,7 @@ import CoursesPage from "./pages/CoursesPage"
 import ContactPage from "./pages/ContactPage"
 import AdmissionsPage from "./pages/AdmissionsPage"
 import {  BrowserRouter as Router,Routes, Route } from "react-router-dom"
-import ChatbotComponent from "./components/Chatbot/Chatbotcomponents"
+import ChatbotComponent from "./components/Chatbot/ChatbotComponents"
 const App = () => {
     return(
             <Router>
