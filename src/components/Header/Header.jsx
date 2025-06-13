@@ -1,40 +1,53 @@
-import React, { useState } from 'react';
-import './Header.css'
+import React, { useState } from "react"
 import {Link} from "react-router-dom";
-
+import './Header.css'
 const Header = () => {
-    const [isOpen,setIsOpen]=useState()
-    return (
-        <header id="t">
-            <nav id="Z">
-                <>Vivekanand College</>
-                <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
-                <div className="bar"/>
-                <div className="bar"/>
-                <div className="bar"/>
-                <div className='bar'/>
-                </div>
-                <div>
-                {isOpen && (
-                    <div className="menu">
-                    <Link to='/' id="R">  HomePage </Link>
-                    <Link to='/aboutpage' id="R"> AboutPage </Link>
-                     <Link to='/coursespage' id="R"> CoursesPage </Link>
-                     <Link to='/contactpage' id="R"> ContactPage </Link>
-                     <Link to='/admissionspage'> <button id="u">Apply Now!</button></Link>
-                    </div>
-                )}
-                </div>
-                <div>
-                <Link to='/' id="R">  HomePage </Link>
-                <Link to='/aboutpage' id="R"> AboutPage </Link>
-                <Link to='/coursespage' id="R"> CoursesPage </Link>
-                <Link to='/contactpage' id="R"> ContactPage </Link>
-                <Link to='/admissionspage'> <button id="u">Apply Now!</button></Link>
-                </div>   
-            </nav>
-        </header>
-    );
+const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+const toggleDrawer =() => {
+    setIsDrawerOpen(!isDrawerOpen);
+};
+const closeDrawer = () => {
+    setIsDrawerOpen(false);
 };
 
-export default Header;
+    return (
+        <header className="main-header">
+            {" "}
+            <div className="college-name">
+                <Link to="/">Vivekanand College</Link>{"   "}
+            </div>
+                
+                <nav className="navbar desktop-nav">
+                <Link to='/' className="nav-item">HomePage  </Link>
+                <Link to='/aboutpage' className="nav-item">AboutPage </Link>
+                <Link to='/coursespage' className="nav-item">CoursesPage </Link>
+                <Link to='/contactpage' className="nav-item">ContactPage </Link>
+                <Link to='/admissionspage' className="nav-item btn primary-btn">Apply Now! </Link>
+                </nav>
+                
+                <button className="hamburger-menu" onClick={toggleDrawer}>
+        <span className="hamburger-icon"></span>
+        <span className="hamburger-icon"></span>
+        <span className="hamburger-icon"></span>
+      </button>
+                <nav className={`drawer-nav ${isDrawerOpen ? "open" : ""}`} >
+                 <button className="close-drawer-btn" onClick={toggleDrawer}>
+                    ❌
+                   </button> 
+                <Link to='/' className="nav-item" onClick={closeDrawer}>HomePage  </Link>
+                <Link to='/aboutpage'className="nav-item" >AboutPage </Link>
+                <Link to='/coursespage' className="nav-item">CoursesPage </Link>
+                <Link to='/contactpage' className="nav-item">ContactPage </Link>
+                <Link to='/admissionspage' className="nav-item btn primary-btn" onClick={closeDrawer}>Apply Now! </Link>
+                
+                
+             
+               </nav>
+               {isDrawerOpen && (
+                <div className="drawer-overlay" onClick={toggleDrawer}></div>
+               )}
+            </header>
+    );
+}
+
+export default Header
