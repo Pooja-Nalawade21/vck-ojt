@@ -13,7 +13,7 @@ const AdmissionsPage = () => {
             <p>Welcome to the Admissions page of Vivekanand College! We are delighted you're considering joining our vibrant academic community. Our admission process is designed to be straightforward and accessible.</p>
             <p>Please review the eligibility criteria and key dates below for the upcoming academic year. For any queries, feel free to contact our admissions office.</p>
             <div>
-            <h1>Eligibility Criteria for Undergraduate Programs</h1>
+            <h1 id="H">Eligibility Criteria for Undergraduate Programs</h1>
             <table className="q">
                 <thead>
                     <tr>
@@ -45,7 +45,7 @@ const AdmissionsPage = () => {
                 </tbody>
             </table>
             </div>
-            <h5>Application Process</h5>
+            <h5 id="H">Application Process</h5>
             <ol>
               <li><strong>Online Application:</strong> Fill out the application form available on our portal.</li>  
               <li><strong>Document Submission:</strong> Upload scanned copies of required documents (mark sheets, ID proof, etc.).</li>

@@ -12,8 +12,8 @@ const CoursesPage = () => {
             <h1>Our Academic Programs</h1>
             <p>Vivekanand College offers a comprehensive range of undergraduate and postgraduate programs designed to equip students with the knowledge and skills demanded by today's dynamic global landscape. Our curriculum is regularly updated to reflect industry trends and academic advancements.</p>
             <h2>Discover Campus Life</h2>
-            <video src="/public/Videos/video1.mp4" alt="zxcvb"  controls width="100%" height="auto" id="r"></video>
-            <h2>Undergraduate Programs (UG)</h2>
+            <video src="/Videos/video1.mp4" alt="zxcvb"  controls width="100%" height="auto" id="r"></video>
+            <h2 id="H">Undergraduate Programs (UG)</h2>
       <ul>
         <li>**Bachelor of science(B.Sc)
         <ul>
@@ -35,7 +35,7 @@ const CoursesPage = () => {
         </ul>
         </li>
       </ul>
-      <h3>Postgraduate Programs (PG)</h3>
+      <h3 id="H">Postgraduate Programs (PG)</h3>
       <ul>
         <li>**Master of Science (M.Sc.)**
         <ul>
@@ -46,7 +46,7 @@ const CoursesPage = () => {
         <li>**Master of Commerce (M.Com)** (2 years)</li>
         <li>**Master of Arts (M.A.)** (2 years)</li>
       </ul>
-      <h5>Program Details & Fee Structure (Annual)</h5>
+      <h5 id="H">Program Details & Fee Structure (Annual)</h5>
       <table className="q">
         <thead>
           <tr>
@@ -75,7 +75,7 @@ const CoursesPage = () => {
          </tbody>
       </table>
       
-      <h4>Specialized & Vocational Courses</h4>
+      <h4 id="H">Specialized & Vocational Courses</h4>
       <p>In addition to traditional degree programs, we offer various certificate and diploma courses in areas like Digital Marketing, Web Development, Data Analytics, and Soft Skills Development, providing specialized training for career enhancement.</p>
       <h5>Explore detailed syllabi and admission criteria on our Admissions page.</h5>
       <Link to="/admissionspage"><button id="A">Inquire About Courses</button></Link>
