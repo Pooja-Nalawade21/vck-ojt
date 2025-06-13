@@ -32,7 +32,7 @@ const closeDrawer = () => {
       </button>
                 <nav className={`drawer-nav ${isDrawerOpen ? "open" : ""}`} >
                  <button className="close-drawer-btn" onClick={toggleDrawer}>
-                    ❌
+                    
                    </button> 
                 <Link to='/' className="nav-item" onClick={closeDrawer}>HomePage  </Link>
                 <Link to='/aboutpage'className="nav-item" >AboutPage </Link>
