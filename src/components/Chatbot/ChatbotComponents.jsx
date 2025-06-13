@@ -33,7 +33,7 @@ const ChatbotComponent = () => {
       setIsKnowledgeBaseLoading(false);
     };
     prepareKB();
-  }, []);
+  }, []); 
   useEffect(() => {
     if (chatMessagesRef.current) {
       chatMessagesRef.current.scrollTo({
@@ -69,9 +69,9 @@ const ChatbotComponent = () => {
         }
       }
       console.log(
-        `Best matching intent: ${bestMatch.intent} with score: ${bestMatch.score}`
+        `Best matching intent: ${bestMatch.intent} with score: ${bestMatch.score}` //back tick for value access
       );
-      if (bestMatch.score >= SIMILARITY_THRESHOLD) {
+      if (bestMatch.score >= SIMILARITY_THRESHOLD) {       //lowervalue:loose check higher;strictcheck
         return preparedKnowledgeBase[bestMatch.intent].response;
       } else {
         return preparedKnowledgeBase.default.response;
@@ -92,9 +92,9 @@ const ChatbotComponent = () => {
   const handleSendMessage = async () => {
     if (inputValue.trim() === "") return;
     const userMessageText = inputValue;
-    const newUserMessage = { text: userMessageText, sender: "user" };
+    const newUserMessage = { text: userMessageText, sender: "user" };   //spread operator;to display prvious message
     setMessages((prevMessages) => [...prevMessages, newUserMessage]);
-    setInputValue("");
+    setInputValue("");   //for empty msg box after texting prev.msg
     if (!isOnline) {
       setMessages((prevMessages) => [
         ...prevMessages,
@@ -103,7 +103,7 @@ const ChatbotComponent = () => {
           sender: "bot",
         },
       ]);
-      return;
+      return;  //if not return we cant access it.
     }
     if (isKnowledgeBaseLoading) {
       setMessages((prevMessages) => [
@@ -119,7 +119,7 @@ const ChatbotComponent = () => {
     const botResponse = { text: aiResponseText, sender: "bot" };
     setMessages((prevMessages) => [...prevMessages, botResponse]);
   };
-  const handleInputChange = (event) => {
+  const handleInputChange = (event) => {   //handel;handle any input change
     setInputValue(event.target.value);
   };
   const handleKeyPress = (event) => {
@@ -191,7 +191,7 @@ const ChatbotComponent = () => {
             <div className="chat-input-area">
               <input
                 type="text"
-                placeholder={
+                placeholder={   //extra value placeholder
                   loading || isKnowledgeBaseLoading || !isOnline
                     ? "Waiting..."
                     : "Type your message..."

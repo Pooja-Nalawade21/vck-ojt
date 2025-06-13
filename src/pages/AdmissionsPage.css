@@ -41,3 +41,24 @@
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
+.a{
+  height: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 40px;
+  border-radius: 8px;
+}
+
+.o{
+  background-color: aquamarine;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x:hidden ;
+}

@@ -5,12 +5,13 @@ import Footer from "../components/Footer/Footer"
 import { Link } from "react-router-dom"
 const HomePage = () => {
     return (
-      <div className="a" style={{overflow:"auto"}}>
+      <div className="o" >
           <Header/>
-         <div className="f">
+          <div className="f a" style={{overflow:"auto"}}>
+         <div className="a">
               <img src="\Images\1.jpeg" alt="vivekanand college campus" className="h"/>
           <div className="g">
-            <h1><strong>Welcome to Vivekanand College!</strong></h1>
+            <h1>Welcome to Vivekanand College!</h1>
             <p>Your journey to excellence starts here.</p>
             <Link to='/admissionspage'> <button id="A">Apply Now!</button></Link>
           </div>
@@ -26,14 +27,15 @@ const HomePage = () => {
               <li>**Strong Placements:** Excellent career opportunities with leading companies.</li>
           </ul>
           <h3>Campus Life & Facilities</h3>
-          <div className="j">
+          <div>
           <img src="/Images/3.jpeg" alt="Campus View 1" className="k" />
           <img src="/Images/4.jpg" alt="campus view 2" className="j" />
-          </div><br></br><br></br><br></br><br></br>
+          </div>
           <div  className="i">
           <p>Explore our vibrant campus and state-of-the-art facilities designed to enhance your learning experience and personal growth.</p>
           <h4>Ready to explore our courses?</h4>
            <Link to="/coursespage"><button id="A">Explore Courses</button></Link> 
+           </div>
            </div>
           <Footer/>
      </div>

@@ -4,10 +4,10 @@ import Footer from "../components/Footer/Footer"
 
 const ContactPage = () => {
     return (
-        <div>
+        <div className="o">
             <Header/>
-            <div className="w" style={{overflow:"auto"}}>
-            <h1>Contact Us</h1>
+            <div className="a" style={{overflow:"auto"}}>
+            <h1 className="v">Contact Us</h1>
             <p>We'd love to hear from you! Whether you have questions about admissions, programs, or campus life, our team is here to help.</p>
             <h2>General Enquiries</h2>
             <p>Vivekanand College kolhpur tarabai chouk,nagala park,E-ward karvir-416003 India</p>

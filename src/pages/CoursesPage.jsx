@@ -1,17 +1,18 @@
 import React from "react"
-
+import './CoursesPage.css'
 import Header from "../components/Header/Header"
 import Footer from "../components/Footer/Footer"
+import { Link } from "react-router-dom"
 
 const CoursesPage = () => {
     return (
-        <div className="w" style={{overflow:"auto"}}>
+        <div className="o">
             <Header/>
-            <div>
+            <div className="a" style={{overflow:"auto"}}>
             <h1>Our Academic Programs</h1>
             <p>Vivekanand College offers a comprehensive range of undergraduate and postgraduate programs designed to equip students with the knowledge and skills demanded by today's dynamic global landscape. Our curriculum is regularly updated to reflect industry trends and academic advancements.</p>
             <h2>Discover Campus Life</h2>
-            <video src="/public/Videos/video1.mp4" alt="zxcvb"  controls id="q"></video>
+            <video src="/public/Videos/video1.mp4" alt="zxcvb"  controls width="100%" height="auto" id="r"></video>
             <h2>Undergraduate Programs (UG)</h2>
       <ul>
         <li>**Bachelor of science(B.Sc)
@@ -46,7 +47,7 @@ const CoursesPage = () => {
         <li>**Master of Arts (M.A.)** (2 years)</li>
       </ul>
       <h5>Program Details & Fee Structure (Annual)</h5>
-      <table>
+      <table className="q">
         <thead>
           <tr>
             <th>Program Type</th>
@@ -58,18 +59,18 @@ const CoursesPage = () => {
          </thead>
          <tbody>
           <tr>
-            <tb>U G</tb>
-            <tb> B.Sc. Computer Science</tb>
-            <tb>3 Years</tb>
-            <tb>70000</tb>
-            <tb>10+2 Commerce</tb>
+            <td>U G</td>
+            <td> B.Sc. Computer Science</td>
+            <td>3 Years</td>
+            <td>70000</td>
+            <td>10+2 Commerce</td>
           </tr>
           <tr>
-            <tb>PG</tb>
-           <tb>MSc. Information Technology</tb>
-           <tb>2 Years</tb>
-           <tb>95000</tb>
-           <tb>BSc. IT/CS</tb>
+            <td>PG</td>
+           <td>MSc. Information Technology</td>
+           <td>2 Years</td>
+           <td>95000</td>
+           <td>BSc. IT/CS</td>
           </tr>
          </tbody>
       </table>
@@ -77,7 +78,7 @@ const CoursesPage = () => {
       <h4>Specialized & Vocational Courses</h4>
       <p>In addition to traditional degree programs, we offer various certificate and diploma courses in areas like Digital Marketing, Web Development, Data Analytics, and Soft Skills Development, providing specialized training for career enhancement.</p>
       <h5>Explore detailed syllabi and admission criteria on our Admissions page.</h5>
-      <button>Inquire About Courses</button>
+      <Link to="/admissionspage"><button id="A">Inquire About Courses</button></Link>
        </div>
        <Footer/>
         </div>
